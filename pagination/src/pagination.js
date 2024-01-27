@@ -14,12 +14,14 @@ function Pagination()
 
   const fetchData = async() => {
     try{
+        
     const response = await axios.get(`https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json`);
     setEmployee(response.data);
     }
     catch(e)
     {
-        alert('failed to fetch data');
+        console.log(e);
+        window.alert('failed to fetch data');
     }
   }
 
