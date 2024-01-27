@@ -19,7 +19,7 @@ function Pagination()
     }
     catch(e)
     {
-        alert('failed to  fetch data');
+        alert('failed to fetch data');
     }
   }
 
